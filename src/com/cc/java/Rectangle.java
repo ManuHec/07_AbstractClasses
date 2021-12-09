@@ -1,6 +1,6 @@
 package com.cc.java;
 
-public class Rectangle{
+public class Rectangle extends Shape {
 
     private double height, width;
 
@@ -9,6 +9,9 @@ public class Rectangle{
         this.width = width;
     }
 
- 
-    
+    @Override
+    public double area() {
+        return height * width;
+    }
+
 }
